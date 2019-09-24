@@ -1,7 +1,7 @@
 FROM centos:centos7.6.1810
 MAINTAINER chenjh "842761733@qq.com"
-ADD jodconverter-web/target/kkFileView-*.tar.gz /opt/
 COPY fonts/* /usr/share/fonts/chienes/
+ADD jodconverter-web/target/kkFileView-*.tar.gz /opt/
 RUN yum install -y kde-l10n-Chinese &&\
 	yum install -y glibc-common &&\
 	yum install -y fontconfig &&\
