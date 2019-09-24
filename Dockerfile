@@ -1,6 +1,6 @@
 FROM centos:centos7.6.1810
 MAINTAINER chenjh "842761733@qq.com"
-
+wget -nv -O /opt/ https://mboscloud.oss-cn-hangzhou.aliyuncs.com/kkfileview/kkFileView-2.2.0-SNAPSHOT.tar.gz
 COPY fonts/* /usr/share/fonts/chienes/
 RUN yum install -y kde-l10n-Chinese &&\
 	yum install -y glibc-common &&\
